@@ -15,7 +15,7 @@ const NavLink = (props: Props) => {
 
   return (
     <a
-      className={`active:border-b-2 hover:border-b-2 border-gray-300`}
+      // className={`hover:border-b-2 border-gray-300`}
       // onClick={handleClick}
       href={props.href}
     >
