@@ -1,0 +1,16 @@
+---
+import NavLinksBar from "./header/NavLinksBar.jsx";
+
+export interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="md:text-center my-6 text-gray-800 hover:text-gray-900">
+  <div class="font-lobster text-4xl font-bold mb-6">
+    <a href="/">Through My Eyes</a>
+  </div>
+  <NavLinksBar title={title} client:load />
+</div>

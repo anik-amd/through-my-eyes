@@ -8,6 +8,7 @@ specifiers:
   astro: ^2.0.0
   react: ^18.0.0
   react-dom: ^18.0.0
+  react-grid-gallery: ^1.0.0
   tailwindcss: ^3.0.24
 
 dependencies:
@@ -18,6 +19,7 @@ dependencies:
   astro: 2.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-grid-gallery: 1.0.0_react@18.2.0
   tailwindcss: 3.2.4
 
 packages:
@@ -2559,6 +2561,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-grid-gallery/1.0.0_react@18.2.0:
+    resolution: {integrity: sha512-S1gr6WXBlPFVrE0x2BHuu7jhyaB61mabcMQyx+8KCgAyKzGza0WF67AfAnS9Q00aurFEq4IP8eqb2Bk5F4RAmQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react/18.2.0:
