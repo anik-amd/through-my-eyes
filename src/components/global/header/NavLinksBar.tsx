@@ -6,7 +6,7 @@ interface Props {
 
 const NavLinkBar = (props: Props) => {
   return (
-    <div className="font-josefin font-bold flex justify-between mx-96">
+    <div className="font-josefin font-bold flex justify-around mx-24 md:mx-96">
       <div
         className={`${
           props.title == "Home" ? "border-b-2" : ""
