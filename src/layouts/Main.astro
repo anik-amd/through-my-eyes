@@ -26,7 +26,7 @@ const { title = "Home" } = Astro.props;
       {title === "Home" ? "Through My Eyes" : `${title} || Through My Eyes`}
     </title>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <Header title={title} />
     <slot />
     <Footer />
