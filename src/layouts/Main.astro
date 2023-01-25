@@ -28,7 +28,7 @@ const { title = "Home" } = Astro.props;
   </head>
   <body class="flex flex-col min-h-screen">
     <Header title={title} />
-    <slot />
+    <main class="mx-14 md:mx-52 lg:mx-64"><slot /></main>
     <Footer />
   </body>
 </html>
