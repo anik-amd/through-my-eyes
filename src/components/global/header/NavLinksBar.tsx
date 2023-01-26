@@ -8,7 +8,7 @@ interface Props {
 
 const NavLinkBar = (props: Props) => {
   return (
-    <div className="font-josefin font-bold flex justify-around mx-24 md:mx-96">
+    <div className="font-josefin font-bold flex justify-around mx-6 md:mx-96">
       <div
         className={`${
           props.title == "Gallery" ? "border-b-2" : ""
