@@ -4,7 +4,7 @@ interface Props {
   title?: string;
 }
 
-// todo: should use localStorage?
+// TODO: should use localStorage?
 
 const NavLinkBar = (props: Props) => {
   return (
@@ -33,7 +33,7 @@ const NavLinkBar = (props: Props) => {
             <a href="/contact">Contact</a>
           </div>
         </div>
-        // todo: fix position
+        // TODO: fix position
         <div className="inline border-gray-300 pb-1 w-1/5">
           <span>🌙</span>
         </div>
