@@ -6,7 +6,7 @@ export interface Props {
   title?: string;
 }
 
-const { title = "Home" } = Astro.props;
+const { title = "Gallery" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ const { title = "Home" } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>
-      {title === "Home" ? "Through My Eyes" : `${title} || Through My Eyes`}
+      {title === "Gallery" ? "Through My Eyes" : `${title} || Through My Eyes`}
     </title>
   </head>
   <body class="flex flex-col min-h-screen">
