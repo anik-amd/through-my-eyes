@@ -1,5 +1,7 @@
 // import NavLink from "./NavLink";
 
+import Dark from "../../../icons/dark";
+
 interface Props {
   title?: string;
 }
@@ -32,10 +34,9 @@ const NavLinksBar = (props: Props) => {
           >
             <a href="/contact">Contact</a>
           </div>
-          {/* // TODO: fix position */}
-          <div className="inline pb-2 ">
-            <span>🌙</span>
-          </div>
+          <button className="inline">
+            <Dark className="w-5 h-5 inline pb-1" />
+          </button>
         </div>
       </div>
     </>
