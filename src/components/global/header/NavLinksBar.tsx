@@ -1,14 +1,21 @@
 // import NavLink from "./NavLink";
 
-import Dark from "../../../icons/dark";
+import { useStore } from "@nanostores/react";
+import { isDarkStore } from "../../../store";
+
+import Dark from "../../../icons/Dark";
+import Light from "../../../icons/Light";
 
 interface Props {
   title?: string;
 }
 
-// TODO: should use localStorage?
+// TODO: not persistant
 
 const NavLinksBar = (props: Props) => {
+  const isDark = useStore(isDarkStore);
+  console.log(isDark);
+
   return (
     <>
       <div className="sticky top-2 flex justify-center">
@@ -34,8 +41,21 @@ const NavLinksBar = (props: Props) => {
           >
             <a href="/contact">Contact</a>
           </div>
-          <button className="inline">
-            <Dark className="w-5 h-5 inline pb-1" />
+          <button
+            className="inline"
+            onClick={() => {
+              if (isDark === true) {
+                isDarkStore.set(false);
+              } else {
+                isDarkStore.set(true);
+              }
+            }}
+          >
+            {!isDark ? (
+              <Dark className="w-5 h-5 inline pb-1" />
+            ) : (
+              <Light className="w-5 h-5 inline pb-1" />
+            )}
           </button>
         </div>
       </div>
