@@ -10,7 +10,7 @@ const NavLinkBar = (props: Props) => {
   return (
     <>
       <div className="sticky top-2 pt-4 shadow-md font-josefin font-bold px-10 rounded-md mx-10 md:mx-96 bg-white">
-        <div className="flex justify-around w-4/5">
+        <div className="flex justify-around">
           <div
             className={`${
               props.title == "Gallery" ? "border-b-2" : ""
@@ -33,10 +33,10 @@ const NavLinkBar = (props: Props) => {
             <a href="/contact">Contact</a>
           </div>
         </div>
-        // TODO: fix position
-        <div className="inline border-gray-300 pb-1 w-1/5">
+        {/* // TODO: fix position */}
+        {/* <div className="inline border-gray-300 pb-1 w-1/5">
           <span>🌙</span>
-        </div>
+        </div> */}
       </div>
     </>
   );
