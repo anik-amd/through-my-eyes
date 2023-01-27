@@ -1,20 +1,24 @@
-// import NavLink from "./NavLink";
-
-import { useStore } from "@nanostores/react";
-import { isDarkStore } from "../../../store";
-
-import Dark from "../../../icons/Dark";
-import Light from "../../../icons/Light";
+import { useState, useEffect } from "react";
 
 interface Props {
   title?: string;
 }
 
-// TODO: not persistant
-
 const NavLinksBar = (props: Props) => {
-  const isDark = useStore(isDarkStore);
-  console.log(isDark);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");
+
+  const handleClick = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
     <>
@@ -41,21 +45,16 @@ const NavLinksBar = (props: Props) => {
           >
             <a href="/contact">Contact</a>
           </div>
-          <button
-            className="inline"
-            onClick={() => {
-              if (isDark === true) {
-                isDarkStore.set(false);
-              } else {
-                isDarkStore.set(true);
-              }
-            }}
-          >
-            {!isDark ? (
+          // TODO: not working with svg?
+          {/* <button onClick={handleClick}>
+            {theme === "light" ? (
               <Dark className="w-5 h-5 inline pb-1" />
             ) : (
               <Light className="w-5 h-5 inline pb-1" />
             )}
+          </button> */}
+          <button onClick={handleClick}>
+            {theme === "light" ? "🌙" : "☀️"}
           </button>
         </div>
       </div>
