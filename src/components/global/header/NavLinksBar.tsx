@@ -45,7 +45,7 @@ const NavLinksBar = (props: Props) => {
           >
             <a href="/contact">Contact</a>
           </div>
-          // TODO: not working with svg?
+          {/* // TODO: not working with svg? */}
           {/* <button onClick={handleClick}>
             {theme === "light" ? (
               <Dark className="w-5 h-5 inline pb-1" />
