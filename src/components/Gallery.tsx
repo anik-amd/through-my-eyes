@@ -2,10 +2,11 @@ import PhotoAlbum from "react-photo-album";
 
 import photos from "./photos";
 
-import galleryCollection from "../utils";
+import { formattedGalleryCollection } from "../utils";
 
 const Gallery = () => {
-  console.log(galleryCollection);
+  console.log(photos);
+  console.log(formattedGalleryCollection);
   return (
     <div className="mb-5">
       <PhotoAlbum targetRowHeight={300} layout="rows" photos={photos} />

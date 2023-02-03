@@ -4,6 +4,8 @@ import { z, defineCollection } from "astro:content";
 const galleryCollection = defineCollection({
   schema: z.object({
     title: z.string(),
+    height: z.number(),
+    width: z.number(),
   }),
 });
 // 3. Export a single `collections` object to register your collection(s)
