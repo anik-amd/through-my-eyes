@@ -1,4 +1,4 @@
-import { getCollection, getEntryBySlug } from "astro:content";
+import { getCollection } from "astro:content";
 // Get all entries from a collection. Requires the name of the collection as an argument.
 const galleryCollection = await getCollection("gallery");
 
@@ -8,10 +8,9 @@ const formattedGalleryCollection = galleryCollection.map((i) => {
     height: i.data.height,
     width: i.data.width,
     src: "/gallery/images/" + i.slug + ".jpg",
+    content: i.body,
+    slug: i.slug,
   };
 });
-
-// TODO: add UI modal formattedColletion
-// const formattedImageCaption;
 
 export { formattedGalleryCollection };

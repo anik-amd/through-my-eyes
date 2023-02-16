@@ -2,7 +2,7 @@ import PhotoAlbum from "react-photo-album";
 
 import photos from "./photos";
 
-import { formattedGalleryCollection } from "../utils";
+import { formattedGalleryCollection } from "../utils/formattedGallery";
 
 const Gallery = () => {
   console.log(photos);
