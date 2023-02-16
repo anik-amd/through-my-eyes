@@ -9,7 +9,11 @@ const Gallery = () => {
   console.log(formattedGalleryCollection);
   return (
     <div className="mb-5">
-      <PhotoAlbum targetRowHeight={300} layout="rows" photos={photos} />
+      <PhotoAlbum
+        targetRowHeight={300}
+        layout="rows"
+        photos={formattedGalleryCollection}
+      />
     </div>
   );
 };

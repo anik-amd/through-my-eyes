@@ -7,7 +7,7 @@ const formattedGalleryCollection = galleryCollection.map((i) => {
     title: i.data.title,
     height: i.data.height,
     width: i.data.width,
-    src: i.slug + ".jpg",
+    src: "/gallery/images/" + i.slug + ".jpg",
   };
 });
 
