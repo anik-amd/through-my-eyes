@@ -47,7 +47,7 @@ const { title = "Gallery" } = Astro.props;
       window.localStorage.setItem("theme", theme);
     </script>
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen dark:bg-gray-900">
     <Header title={title} />
     <main class="mx-3 md:mx-24 lg:mx-32"><slot /></main>
     <Footer />
