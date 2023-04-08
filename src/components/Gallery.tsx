@@ -8,7 +8,7 @@ const Gallery = () => {
   return (
     <div className="mb-5 cursor-pointer">
       <PhotoAlbum
-        targetRowHeight={300}
+        targetRowHeight={500}
         layout="rows"
         photos={formattedGalleryCollection}
         onClick={(o) => {
