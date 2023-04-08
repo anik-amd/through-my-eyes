@@ -10,20 +10,22 @@ const SingleImage = (props: Props) => {
   );
   console.log(imageObj);
 
-  // adjust an image height to user screen size with tailwind
-
   return (
     <>
       <div className="mb-5">
-        {imageObj ? (
+        <div className="flex flex-col w-full justify-center items-center">
           <img
-            className="h-auto max-w-full"
+            className="mx-auto w-screen md:w-3/4 lg:w-1/2 mb-5"
             src={imageObj?.src}
             alt={imageObj?.title}
           />
-        ) : (
-          <p></p>
-        )}
+          <div className="mb-5 w-screen md:w-3/4 lg:w-1/2">
+            <h1 className="font-josefin text-2xl font-semibold text-gray-800">
+              {imageObj?.title}
+            </h1>
+            <p className="text-base text-gray-900">{imageObj?.content}</p>
+          </div>
+        </div>
       </div>
     </>
   );
