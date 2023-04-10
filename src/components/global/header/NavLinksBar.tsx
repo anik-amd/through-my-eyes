@@ -22,7 +22,7 @@ const NavLinksBar = (props: Props) => {
 
   return (
     <>
-      <div className="sticky top-2 flex justify-center">
+      <div className="sticky top-2 flex justify-center z-10">
         <div className="inline w-fit pt-4 pb-2 shadow-md font-josefin font-bold px-4 md:px-8 rounded-md bg-white dark:bg-gray-700 dark:text-gray-300">
           <div
             className={`${
