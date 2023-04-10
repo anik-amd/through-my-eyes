@@ -5,7 +5,6 @@ import { formattedGalleryCollection } from "../utils/formattedGallery";
 
 const Gallery = () => {
   console.log(formattedGalleryCollection);
-  // TODO: add custom photo render.
   return (
     <div className="mb-5">
       <PhotoAlbum
