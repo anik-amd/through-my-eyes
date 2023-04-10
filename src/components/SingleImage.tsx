@@ -12,6 +12,7 @@ const SingleImage = (props: Props) => {
 
   return (
     <>
+      {/* TODO: increase margin on mobile device */}
       <div className="mb-5">
         <div className="flex flex-col w-full justify-center items-center">
           <img
