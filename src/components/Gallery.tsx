@@ -15,6 +15,7 @@ const Gallery = () => {
         // padding={10}
         photos={formattedGalleryCollection}
         onClick={(o) => {
+          // TODO: remove all console log from production
           console.log(o.photo.slug);
           const slug = "/" + o.photo.slug;
           location.href = slug;
