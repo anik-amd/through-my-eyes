@@ -1,6 +1,17 @@
-# 🏗️ Under Construction
+# 📸 Through My Eyes
 
-Check back later for an awesome portfolio of mobile photography. 📷
+> There is a story behind every capture.
+
+And each story is shared through the website.
+
+**Note:** 🏗️ Under Construction! Check back later for an awesome portfolio of mobile photography.
+
+# ⌨️ TechStack
+
+- 🚀 [**AstroJs**](https://astro.build/): Static site generator with island architecture.
+- 🎨 [**TailwindCSS**](https://tailwindcss.com/): Utility-first CSS framework.
+- ⚛️ [**ReactJs**](https://reactjs.org/): JavaScript library for building user interfaces.
+- 🖼️ [**react-photo-album**](https://react-photo-album.com/): Responsive photo gallery component for React.
 
 # ✒️ Content Authoring
 
@@ -24,7 +35,7 @@ Each `.md` file will contain details of the image like height, width, caption et
 
 In `.md` file, provide details of the corresponding photo in format below:
 
-```
+```md
 ---
 title:
 height:
@@ -36,7 +47,7 @@ Write a detailed caption here.
 
 For example, the file `2023-01-01-test-image.md` might look like this,
 
-```
+```md
 ---
 title: This is Test Title
 height: 300

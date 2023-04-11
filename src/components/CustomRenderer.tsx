@@ -1,3 +1,4 @@
+import { Image } from "@astrojs/image/components";
 import { RenderPhoto } from "react-photo-album";
 
 const CustomRenderer: RenderPhoto = ({
@@ -16,6 +17,7 @@ const CustomRenderer: RenderPhoto = ({
   >
     <img
       alt={alt}
+      loading="lazy"
       style={{
         ...style,
         width: "100%",
@@ -25,6 +27,19 @@ const CustomRenderer: RenderPhoto = ({
       }}
       {...restImageProps}
     />
+    {/* <Image
+      alt={alt}
+      loading="lazy"
+      width={300}
+      style={{
+        ...style,
+        width: "100%",
+        padding: 0,
+        borderRadius: "4px",
+        display: "block",
+      }}
+      {...restImageProps}
+    /> */}
     <div className="absolute rounded-b bottom-0 bg-gray-900 text-gray-200 opacity-0 w-full text-center font-josefin text-sm p-2 group-hover:opacity-40 transition-all duration-150 ease-in-out">
       {restImageProps.title}
     </div>
