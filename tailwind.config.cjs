@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lobster: ["Lobster", ...defaultTheme.fontFamily.sans], //title
-        serif: ["Lato", ...defaultTheme.fontFamily.serif], //body
+        // serif: ["Lato", ...defaultTheme.fontFamily.serif], //body
         josefin: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans], //logo
       },
     },
