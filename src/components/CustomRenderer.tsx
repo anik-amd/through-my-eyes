@@ -1,3 +1,4 @@
+import { Image } from "@astrojs/image/components";
 import { RenderPhoto } from "react-photo-album";
 
 const CustomRenderer: RenderPhoto = ({
@@ -14,8 +15,22 @@ const CustomRenderer: RenderPhoto = ({
     }}
     className="rounded-xl m-4 shadow-md transition-all duration-50 ease-in-out transform hover:scale-105 hover:shadow-lg group"
   >
-    <img
+    {/* <img
       alt={alt}
+      loading="lazy"
+      style={{
+        ...style,
+        width: "100%",
+        padding: 0,
+        borderRadius: "4px",
+        display: "block",
+      }}
+      {...restImageProps}
+    /> */}
+    <Image
+      alt={alt}
+      loading="lazy"
+      width={300}
       style={{
         ...style,
         width: "100%",
