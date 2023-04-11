@@ -15,7 +15,7 @@ const CustomRenderer: RenderPhoto = ({
     }}
     className="rounded-xl m-4 shadow-md transition-all duration-50 ease-in-out transform hover:scale-105 hover:shadow-lg group"
   >
-    {/* <img
+    <img
       alt={alt}
       loading="lazy"
       style={{
@@ -26,8 +26,8 @@ const CustomRenderer: RenderPhoto = ({
         display: "block",
       }}
       {...restImageProps}
-    /> */}
-    <Image
+    />
+    {/* <Image
       alt={alt}
       loading="lazy"
       width={300}
@@ -39,7 +39,7 @@ const CustomRenderer: RenderPhoto = ({
         display: "block",
       }}
       {...restImageProps}
-    />
+    /> */}
     <div className="absolute rounded-b bottom-0 bg-gray-900 text-gray-200 opacity-0 w-full text-center font-josefin text-sm p-2 group-hover:opacity-40 transition-all duration-150 ease-in-out">
       {restImageProps.title}
     </div>
