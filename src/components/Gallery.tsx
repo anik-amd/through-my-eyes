@@ -4,7 +4,7 @@ import CustomRenderer from "./CustomRenderer";
 import { formattedGalleryCollection } from "../utils/formattedGallery";
 
 const Gallery = () => {
-  console.log(formattedGalleryCollection);
+  // TODO: optimize images, use lazy loading perphaps.
   return (
     <div className="mb-5">
       <PhotoAlbum
@@ -15,7 +15,6 @@ const Gallery = () => {
         // padding={10}
         photos={formattedGalleryCollection}
         onClick={(o) => {
-          console.log(o.photo.slug);
           const slug = "/" + o.photo.slug;
           location.href = slug;
         }}
