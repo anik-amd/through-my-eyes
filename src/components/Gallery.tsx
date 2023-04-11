@@ -5,6 +5,7 @@ import { formattedGalleryCollection } from "../utils/formattedGallery";
 
 const Gallery = () => {
   // TODO: optimize images, use lazy loading perphaps.
+  // TODO: update astro to beta or remove astro/image.
   return (
     <div className="mb-5">
       <PhotoAlbum
