@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lobster: ["Lobster", ...defaultTheme.fontFamily.sans],
-        serif: ["Lato", ...defaultTheme.fontFamily.serif],
-        josefin: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans],
+        lobster: ["Lobster", ...defaultTheme.fontFamily.sans], //title
+        serif: ["Lato", ...defaultTheme.fontFamily.serif], //body
+        josefin: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans], //logo
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

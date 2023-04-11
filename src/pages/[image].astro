@@ -16,8 +16,10 @@ export function getStaticPaths() {
 }
 
 const { image } = Astro.params;
+
+const imageObj = formattedGalleryCollection.find((o) => o.slug === image);
 ---
 
-<Main>
+<Main title={imageObj != undefined ? imageObj.title : "View Image"}>
   <SingleImage slug={image} client:load />
 </Main>
