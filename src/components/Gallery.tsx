@@ -5,7 +5,6 @@ import { formattedGalleryCollection } from "../utils/formattedGallery";
 
 const Gallery = () => {
   // TODO: optimize images, use lazy loading perphaps.
-  console.log(formattedGalleryCollection);
   return (
     <div className="mb-5">
       <PhotoAlbum
@@ -16,8 +15,6 @@ const Gallery = () => {
         // padding={10}
         photos={formattedGalleryCollection}
         onClick={(o) => {
-          // TODO: remove all console log from production
-          console.log(o.photo.slug);
           const slug = "/" + o.photo.slug;
           location.href = slug;
         }}

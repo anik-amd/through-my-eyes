@@ -8,7 +8,6 @@ const SingleImage = (props: Props) => {
   const imageObj = formattedGalleryCollection.find(
     (i) => i.slug === props.slug
   );
-  console.log(imageObj);
 
   return (
     <>
