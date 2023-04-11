@@ -4,6 +4,7 @@ import CustomRenderer from "./CustomRenderer";
 import { formattedGalleryCollection } from "../utils/formattedGallery";
 
 const Gallery = () => {
+  // TODO: optimize images, use lazy loading perphaps.
   console.log(formattedGalleryCollection);
   return (
     <div className="mb-5">
